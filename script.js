@@ -51,12 +51,20 @@ function game() {
     playerSelection =
       playerSelection.charAt(0).toUpperCase() +
       playerSelection.slice(1).toLowerCase();
-    if (!((playerSelection == "Rock")||(playerSelection == "Paper")||(playerSelection == "Scissors"))) {
-      playerSelection = prompt("Please choose a valid fighter from: Rock, Paper, Scissors");
+    if (
+      !(
+        playerSelection == "Rock" ||
+        playerSelection == "Paper" ||
+        playerSelection == "Scissors"
+      )
+    ) {
+      playerSelection = prompt(
+        "Please choose a valid fighter from: Rock, Paper, Scissors"
+      );
+      }
+    
       playRound(playerSelection);
-    } else {
-    playRound(playerSelection);
-    }
+    
   }
   // Returns the game winner
   if (playerScore > computerScore) {
