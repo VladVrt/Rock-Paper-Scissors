@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css"/>
     <title>Rock Paper Scissors</title>
-</head>
-<body>
-    <button id="rock">Rock</button>
-    <button id="paper">Paper</button>
-    <button id="scissors">Scissors</button>
+  </head>
+  <body>
+    <h1 id="title">ROCK PAPER SCISSORS</h1>
+    <div class="centerSection">
+      <div id="rockSection">
+        <img src="./images/rock.png" alt="Rock image"/>
+        <button id="rock">Rock</button>
+      </div>
+      <div id="paperSection">
+        <img src="./images/paper.png" alt="Paper image"/>
+        <button id="paper">Paper</button>
+      </div>
+      <div id="scissorsSection">
+        <img src="./images/scissors.png" alt="Scissors image"/>
+        <button id="scissors">Scissors</button>
+      </div>
+    </div>
     <div class="gameRoundResult"></div>
+    <div id="footer">
+        <a href="https://github.com/VladVrt"><img id="githubLogo" src="./images/github-black.png" alt="GitHub logo"></a>
+        <p>Vlad</p>
+    </div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
